@@ -1,30 +1,45 @@
-# EVENTORA — Event Management System
+# 📅 EVENTORA — Event Management System
 
-A responsive and modern **Event Management System** built using **Vue.js and Vite**. The system allows users to create, view, update, delete, search, and filter event records through an interactive dashboard.
+A modern and responsive Event Management System built using Vue.js and Vite. EVENTORA allows users to create, view, search, edit, and delete event records through a simple and organized interface.
 
 ---
 
 ## 📌 Project Information
 
-**Project:** Event Management System  
-**System Name:** EVENTORA  
-**Framework:** Vue.js  
-**Build Tool:** Vite  
-**Language:** JavaScript  
-**Name:** Justin D. Pineda
+**Student:** Justin D. Pineda  
 **Course:** BSCS  
-**Module:** Module 7  
-**Year & Section:** BSCS 3A
+**Section:** BSCS 3A  
+**Module:** Module 7 — Vue.js  
+**Project:** Event Management System  
+**System Name:** EVENTORA
 
 ---
 
-## 🎯 Project Overview
+## 📖 System Description
 
-EVENTORA is a web-based Event Management System designed to organize and manage event records efficiently.
+EVENTORA is a web-based Event Management System designed to help users organize and manage event information efficiently.
 
-The system provides a centralized dashboard where users can monitor event statistics, view upcoming events, manage event records, and analyze event statuses.
+The system provides a centralized dashboard where users can monitor event records and perform common event management operations. It supports adding new events, viewing existing events, editing event details, deleting events, and searching through event records.
 
-The interface was designed to be clean, modern, responsive, and easy to use on both desktop and mobile devices.
+The system also uses browser localStorage so that event records remain available even after refreshing the page.
+
+---
+
+## 🎯 Selected Entity
+
+The selected entity for this system is:
+
+**Event**
+
+Each event record contains important information such as:
+
+- Event title
+- Event date
+- Event time
+- Event location
+- Event category
+- Event description
+- Event status
 
 ---
 
@@ -32,56 +47,53 @@ The interface was designed to be clean, modern, responsive, and easy to use on b
 
 ### 📊 Dashboard
 
-- Total Events
-- Upcoming Events
-- Completed Events
-- Cancelled Events
-- Event Overview Analytics
-- Event Status Distribution
-- Upcoming Events Section
+- Displays total number of events
+- Shows upcoming events
+- Shows completed events
+- Shows cancelled events
+- Provides an overview of event records
+- Displays event statistics and status distribution
 
-### 📝 Event Management
+### ➕ Add Event
 
-- Create new events
-- View event records
-- Edit existing events
-- Delete events
-- Event confirmation before deletion
-- Event status management
+Users can create a new event by entering the required event information.
 
-### 🔎 Search & Filter
+### ✏️ Edit Event
 
-- Search events by:
-  - Event name
-  - Location
-  - Organizer
-- Filter events by status:
-  - All
-  - Upcoming
-  - Completed
-  - Cancelled
+Existing event records can be edited and updated.
 
-### 🔔 Notification System
+### 🗑️ Delete Event
 
-- Event creation notifications
-- Event update notifications
-- Event deletion notifications
-- Unread notification counter
-- Mark notifications as read
-- Mark all notifications as read
+Users can remove an event record with a confirmation process.
 
-### 🌙 Appearance
+### 🔎 Search and Filter
 
-- Light Mode
-- Night Mode
-- Smooth transitions
-- Responsive layout
-- Mobile-friendly interface
-- Hamburger side menu
+Users can search and filter event records to quickly find specific events.
 
-### 💾 Data Persistence
+### 💾 Local Storage
 
-Event records are saved using **Local Storage**, allowing the data to remain available even after refreshing the browser.
+Event data is stored using browser localStorage so that records remain available after refreshing the page.
+
+### 🔔 Notifications
+
+The system provides notifications for important actions and system updates.
+
+### 🌙 Light and Night Mode
+
+Users can switch between light mode and night mode for a more comfortable viewing experience.
+
+### 📱 Responsive Design
+
+The interface is responsive and adapts to:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile devices
+
+### ☰ Responsive Navigation
+
+The system includes a responsive navigation menu with a hamburger menu for smaller screens.
 
 ---
 
@@ -92,30 +104,18 @@ Event records are saved using **Local Storage**, allowing the data to remain ava
 - JavaScript
 - HTML5
 - CSS3
-- Local Storage
-- Responsive Web Design
+- Tailwind CSS
+- Browser localStorage
+- Git
+- GitHub
+- GitHub Actions
+- GitHub Pages
 
 ---
 
-## 📁 Project Structure
+## 💻 Installation and Setup
 
-```text
-pineda-module7-event-system/
-│
-├── public/
-│
-├── src/
-│   ├── components/
-│   │   ├── AppFooter.vue
-│   │   ├── AppHeader.vue
-│   │   ├── EventForm.vue
-│   │   └── EventList.vue
-│   │
-│   ├── App.vue
-│   ├── main.js
-│   └── style.css
-│
-├── index.html
-├── package.json
-├── package-lock.json
-└── README.md
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/benyqt022006/pineda-module7-vue-system.git
