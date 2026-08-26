@@ -111,7 +111,6 @@ function clearErrors() {
 /* =========================================
    VALIDATION
 ========================================= */
-
 function validate() {
   clearErrors()
 
@@ -127,6 +126,15 @@ function validate() {
   if (!form.eventDate) {
     errors.eventDate =
       'Event date is required.'
+
+    valid = false
+    
+  } else if (
+    form.status === 'Upcoming' &&
+    new Date(`${form.eventDate}T${form.eventTime || '00:00'}`) < new Date()
+  ) {
+    errors.eventDate =
+      'Upcoming events cannot have a past date.'
 
     valid = false
   }
@@ -147,7 +155,6 @@ function validate() {
 
   return valid
 }
-
 /* =========================================
    SUBMIT
 ========================================= */
