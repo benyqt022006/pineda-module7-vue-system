@@ -1,10 +1,10 @@
-# 📅 EVENTORA — Event Management System
+# EVENTORA — Event Management System
 
 A modern and responsive Event Management System built using **Vue.js** and **Vite**. EVENTORA allows users to create, view, search, edit, and delete event records through a simple and organized interface.
 
 ---
 
-## 📌 Project Information
+## Project Information
 
 **Student:** Justin D. Pineda
 **Course:** BSCS
@@ -15,7 +15,7 @@ A modern and responsive Event Management System built using **Vue.js** and **Vit
 
 ---
 
-## 📖 System Description
+## System Description
 
 EVENTORA is a web-based Event Management System designed to help users organize and manage event information efficiently.
 
@@ -25,7 +25,7 @@ The application is built using Vue.js and follows a component-based structure to
 
 ---
 
-## 🎯 Selected Entity
+## Selected Entity
 
 The selected entity for this system is:
 
@@ -43,9 +43,9 @@ Each event record contains important information such as:
 
 ---
 
-## ✨ Features
+## Features
 
-### 📊 Dashboard
+### Dashboard
 
 * Displays the total number of events
 * Shows upcoming events
@@ -54,39 +54,39 @@ Each event record contains important information such as:
 * Provides an overview of event records
 * Displays event statistics and status distribution
 
-### ➕ Add Event
+### Add Event
 
 Users can create a new event by entering the required event information through the event form.
 
-### 📋 View Event Records
+### View Event Records
 
 Users can view multiple event records in an organized list or table.
 
-### ✏️ Edit Event
+### Edit Event
 
 Existing event records can be selected and updated when event information changes.
 
-### 🗑️ Delete Event
+### Delete Event
 
 Users can remove an event record through a confirmation process to help prevent accidental deletion.
 
-### 🔎 Search and Filter
+### Search and Filter
 
 Users can search and filter event records to quickly find specific events.
 
-### 💾 Local Storage
+### Local Storage
 
 Event data is stored using browser localStorage. This allows event records to remain available after refreshing the page without requiring a separate database.
 
-### 🔔 Notifications
+### Notifications
 
 The system provides notifications to inform users about important actions, such as successfully adding, updating, or deleting an event.
 
-### 🌙 Light and Night Mode
+### Light and Night Mode
 
 Users can switch between light mode and night mode for a more comfortable viewing experience.
 
-### 📱 Responsive Design
+### Responsive Design
 
 The interface is responsive and adapts to different screen sizes, including:
 
@@ -95,13 +95,13 @@ The interface is responsive and adapts to different screen sizes, including:
 * Tablet
 * Mobile devices
 
-### ☰ Responsive Navigation
+### Responsive Navigation
 
 The system includes a responsive navigation menu with a hamburger menu for smaller screen sizes.
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 EVENTORA uses a **component-based Vue.js architecture**. The application is divided into reusable Vue components and composables that handle different responsibilities.
 
@@ -115,7 +115,7 @@ This structure separates the user interface from application logic and data stor
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **Vue.js** — Frontend framework
 * **Vite** — Development and build tool
@@ -131,7 +131,7 @@ This structure separates the user interface from application logic and data stor
 
 ---
 
-## 💻 Installation and Setup
+## Installation and Setup
 
 ### 1. Clone the Repository
 
@@ -171,7 +171,7 @@ The generated production files will be placed in the `dist` directory.
 
 ---
 
-## 💾 Data Storage — localStorage
+## Data Storage — localStorage
 
 EVENTORA uses the browser's **localStorage** to store event records.
 
@@ -188,7 +188,7 @@ However, localStorage is browser-specific, meaning the stored records are not au
 
 ---
 
-## 🔗 Connection Between Module 6 and Module 7
+## Connection Between Module 6 and Module 7
 
 The **Module 7 Vue.js project** builds upon the system and entity concepts established in **Module 6**.
 
@@ -199,7 +199,7 @@ Module 7 focuses on implementing the system using Vue.js, reusable components, r
 ---
 
 
-## ⚙️ Continuous Integration
+## Continuous Integration
 
 EVENTORA uses **GitHub Actions** to automatically check the application whenever changes are pushed to the repository or a pull request is created for the main branch.
 
@@ -214,7 +214,7 @@ This helps verify that the application can be successfully built after code chan
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 The application can be deployed using **GitHub Pages**. The production version is generated through the Vite build process and can be hosted as a static web application.
 
@@ -222,7 +222,7 @@ The GitHub repository also contains the project's source code, documentation, sc
 
 ---
 
-## ⚠️ Known Limitations
+## Known Limitations
 
 * Event records are stored only in the browser's localStorage.
 * Data is not synchronized between different devices or browsers.
@@ -234,7 +234,7 @@ The GitHub repository also contains the project's source code, documentation, sc
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 Future versions of EVENTORA may include:
 
@@ -252,31 +252,8 @@ Future versions of EVENTORA may include:
 
 ---
 
-## 📂 Project Structure
 
-A simplified structure of the project is:
-
-```text
-pineda-module7-vue-system/
-├── .github/
-│   └── workflows/
-│       └── build.yml
-├── public/
-├── src/
-│   ├── components/
-│   ├── composables/
-│   ├── App.vue
-│   └── main.js
-├── screenshots/
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
-```
-
----
-
-## 👨‍💻 Author
+## Author
 
 **Justin D. Pineda**
 BSCS 3A
