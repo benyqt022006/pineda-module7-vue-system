@@ -25,7 +25,8 @@ const emit = defineEmits([
   'toggle-menu',
   'toggle-notifications',
   'toggle-theme',
-  'add-event'
+  'add-event',
+  'logout'
 ])
 </script>
 
@@ -167,7 +168,14 @@ const emit = defineEmits([
           <span class="new-event-text">
             NEW EVENT
           </span>
-
+          <!-- LOGOUT -->
+<button
+  class="header-logout"
+  type="button"
+  @click="emit('logout')"
+>
+  Logout
+</button>
         </button>
 
       </div>
@@ -976,6 +984,34 @@ const emit = defineEmits([
   }
 
 }
+.header-logout {
+  height: 42px;
+  padding: 0 18px;
 
+  border: 1px solid #32c795;
+  border-radius: 11px;
+
+  background: #32c795;
+  color: #06120e;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  cursor: pointer;
+  white-space: nowrap;
+
+  transition: all 0.25s ease;
+}
+
+.header-logout:hover {
+  background: #26b486;
+  border-color: #26b486;
+  transform: translateY(-1px);
+}
+
+.header-logout:hover {
+  background: rgba(239, 96, 96, 0.16);
+  border-color: rgba(239, 96, 96, 0.5);
+}
 </style>
 

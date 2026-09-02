@@ -1,5 +1,6 @@
 <script setup>
 import { ref, computed, onMounted, watch } from 'vue'
+
 import AppHeader from './components/AppHeader.vue'
 import EventForm from './components/EventForm.vue'
 import EventList from './components/EventList.vue'
@@ -483,9 +484,18 @@ function getMonth(date) {
     }
   )
 }
+
+function logout() {
+  sessionStorage.removeItem('eventoraAuthenticated')
+  sessionStorage.removeItem('eventoraUser')
+
+  window.location.reload()
+}
 </script>
 
 <template>
+  
+
   <div
     class="eventora-app"
     :class="{
@@ -510,7 +520,8 @@ function getMonth(date) {
       "
       @toggle-theme="toggleTheme"
       @add-event="openAddForm"
-    />
+      @logout="logout"
+      />
 
     <!-- =====================================
          MOBILE SIDEBAR
@@ -1633,6 +1644,40 @@ function getMonth(date) {
 </template>
 
 <style>
+
+.logout-button {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  z-index: 9999;
+
+  padding: 10px 18px;
+  border: 1px solid rgba(239, 96, 96, 0.35);
+  border-radius: 10px;
+
+  background: rgba(239, 96, 96, 0.1);
+  color: #ff8c8c;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-button:hover {
+  background: rgba(239, 96, 96, 0.2);
+  border-color: rgba(239, 96, 96, 0.6);
+}
+
+@media (max-width: 600px) {
+  .logout-button {
+    top: 12px;
+    right: 12px;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
 /* =========================================
    VARIABLES
 ========================================= */
@@ -3813,5 +3858,21 @@ button {
     height: 210px;
   }
 
+}
+
+.logout-button {
+  border: 1px solid rgba(239, 96, 96, 0.3);
+  border-radius: 10px;
+  padding: 10px 16px;
+  background: rgba(239, 96, 96, 0.08);
+  color: #ff8c8c;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-button:hover {
+  background: rgba(239, 96, 96, 0.15);
+  border-color: rgba(239, 96, 96, 0.5);
 }
 </style>

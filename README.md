@@ -137,126 +137,113 @@ This structure separates the user interface from application logic and data stor
 
 ```bash
 git clone https://github.com/benyqt022006/pineda-module7-vue-system.git
-```
 
-### 2. Open the Project Folder
+
+# Eventora Event Management System
+
+## Module 9 – Software Evolution
+
+Eventora is a Vue.js-based Event Management System developed and continuously improved from Module 7 through Module 9.
+
+The system provides event management functions including creating, displaying, editing, deleting, searching, validating, and storing event records.
+
+---
+
+## Technology Stack
+
+- Vue.js
+- Vite
+- JavaScript
+- CSS
+- localStorage
+- Vue Router
+- Vitest
+- Vue Test Utils
+- jsdom
+- Git and GitHub
+- GitHub Actions
+
+---
+
+## Module 9 Change Request
+
+### CR-M9-01 – User Authentication and Account Management
+
+**Maintenance Type:** Perfective Maintenance
+
+The Module 9 evolution adds user registration, login, and logout functionality to the existing Eventora system.
+
+### Objectives
+
+- Allow users to create an Eventora account.
+- Validate registration information.
+- Allow registered users to log in.
+- Protect access to the main Eventora system through authentication.
+- Provide a logout function.
+- Preserve existing event management functionality.
+
+---
+
+## Authentication Features
+
+### Registration
+
+Users can create an account by providing:
+
+- Full Name
+- Email Address
+- Password
+- Confirm Password
+
+The registration process validates required information, email format, password length, and password confirmation.
+
+### Login
+
+Registered users can log in using their email address and password.
+
+### Logout
+
+Authenticated users can log out from the Eventora system using the Logout button in the application header.
+
+---
+
+## Existing Event Management Features
+
+The following existing functions remain available:
+
+- Add Event
+- Display Event Records
+- Edit Event
+- Delete Event
+- Search Event
+- Event Validation
+- Event Persistence
+- Event Status Management
+
+---
+
+## Testing
+
+Vitest is used for automated testing.
+
+The baseline system contained:
+
+- 11 automated tests
+- 11 passed
+- 0 failed
+
+Module 9 testing adds verification for the new authentication functionality while preserving the existing event management tests.
+
+### Verification Commands
 
 ```bash
-cd pineda-module7-vue-system
-```
+npm run test:run
 
-### 3. Install Dependencies
 
-```bash
-npm install
-```
+add:
 
-### 4. Start the Development Server
-
-```bash
-npm run dev
-```
-
-After running the command, open the local development URL provided by Vite in your browser.
-
-### 5. Build the Application
-
-To create a production build, run:
+```md
+### Production Build
 
 ```bash
 npm run build
-```
-
-The generated production files will be placed in the `dist` directory.
-
----
-
-## Data Storage — localStorage
-
-EVENTORA uses the browser's **localStorage** to store event records.
-
-Instead of using a traditional database, the application saves event information directly in the user's browser. When the application starts, it retrieves the saved records from localStorage and loads them into the Vue application.
-
-This allows users to:
-
-* Keep event records after refreshing the page
-* Store data without a backend database
-* Create, update, and delete records locally
-* Continue using the system without an internet connection after the application has been loaded
-
-However, localStorage is browser-specific, meaning the stored records are not automatically shared between different browsers or devices.
-
----
-
-## Connection Between Module 6 and Module 7
-
-The **Module 7 Vue.js project** builds upon the system and entity concepts established in **Module 6**.
-
-The selected **Event** entity from the previous module is carried into the Vue.js implementation. The event information defined in the earlier system design is represented as event records in EVENTORA.
-
-Module 7 focuses on implementing the system using Vue.js, reusable components, reactive data, client-side state management, localStorage, responsive design, and modern frontend development practices.
-
----
-
-
-## Continuous Integration
-
-EVENTORA uses **GitHub Actions** to automatically check the application whenever changes are pushed to the repository or a pull request is created for the main branch.
-
-The workflow installs the project dependencies and runs the Vue production build:
-
-```bash
-npm ci
-npm run build
-```
-
-This helps verify that the application can be successfully built after code changes.
-
----
-
-## Deployment
-
-The application can be deployed using **GitHub Pages**. The production version is generated through the Vite build process and can be hosted as a static web application.
-
-The GitHub repository also contains the project's source code, documentation, screenshots, and workflow configuration.
-
----
-
-## Known Limitations
-
-* Event records are stored only in the browser's localStorage.
-* Data is not synchronized between different devices or browsers.
-* There is currently no user authentication or account system.
-* There is no server-side database.
-* Event records are managed locally by the user.
-* Clearing browser storage will remove the locally stored event records.
-* The system does not currently provide real-time synchronization between users.
-
----
-
-## Future Improvements
-
-Future versions of EVENTORA may include:
-
-* Backend API integration
-* MySQL or other database integration
-* User authentication and authorization
-* Cloud-based event storage
-* Event calendar integration
-* Email or reminder notifications
-* Multiple-user support
-* Advanced event filtering and sorting
-* Event export and reporting
-* Improved accessibility
-* More advanced dashboard analytics
-
----
-
-
-## Author
-
-**Justin D. Pineda**
-BSCS 3A
-Module 7 — Vue.js
-
----
