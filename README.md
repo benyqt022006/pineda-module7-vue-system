@@ -1,31 +1,31 @@
-# 📅 EVENTORA — Event Management System
+# EVENTORA — Event Management System
 
-A modern and responsive Event Management System built using Vue.js and Vite. EVENTORA allows users to create, view, search, edit, and delete event records through a simple and organized interface.
+A modern and responsive Event Management System built using **Vue.js** and **Vite**. EVENTORA allows users to create, view, search, edit, and delete event records through a simple and organized interface.
 
 ---
 
-## 📌 Project Information
+## Project Information
 
-**Student:** Justin D. Pineda  
-**Course:** BSCS  
-**Section:** BSCS 3A  
-**Module:** Module 7 — Vue.js  
-**Project:** Event Management System  
+**Student:** Justin D. Pineda
+**Course:** BSCS
+**Section:** BSCS 3A
+**Module:** Module 7 — Vue.js
+**Project:** Event Management System
 **System Name:** EVENTORA
 
 ---
 
-## 📖 System Description
+## System Description
 
 EVENTORA is a web-based Event Management System designed to help users organize and manage event information efficiently.
 
 The system provides a centralized dashboard where users can monitor event records and perform common event management operations. It supports adding new events, viewing existing events, editing event details, deleting events, and searching through event records.
 
-The system also uses browser localStorage so that event records remain available even after refreshing the page.
+The application is built using Vue.js and follows a component-based structure to make the system easier to maintain and update. Event records are stored using browser **localStorage**, allowing the data to remain available even after refreshing or reopening the application in the same browser.
 
 ---
 
-## 🎯 Selected Entity
+## Selected Entity
 
 The selected entity for this system is:
 
@@ -33,89 +33,107 @@ The selected entity for this system is:
 
 Each event record contains important information such as:
 
-- Event title
-- Event date
-- Event time
-- Event location
-- Event category
-- Event description
-- Event status
+* Event title
+* Event date
+* Event time
+* Event location
+* Event category
+* Event description
+* Event status
 
 ---
 
-## ✨ Features
+## Features
 
-### 📊 Dashboard
+### Dashboard
 
-- Displays total number of events
-- Shows upcoming events
-- Shows completed events
-- Shows cancelled events
-- Provides an overview of event records
-- Displays event statistics and status distribution
+* Displays the total number of events
+* Shows upcoming events
+* Shows completed events
+* Shows cancelled events
+* Provides an overview of event records
+* Displays event statistics and status distribution
 
-### ➕ Add Event
+### Add Event
 
-Users can create a new event by entering the required event information.
+Users can create a new event by entering the required event information through the event form.
 
-### ✏️ Edit Event
+### View Event Records
 
-Existing event records can be edited and updated.
+Users can view multiple event records in an organized list or table.
 
-### 🗑️ Delete Event
+### Edit Event
 
-Users can remove an event record with a confirmation process.
+Existing event records can be selected and updated when event information changes.
 
-### 🔎 Search and Filter
+### Delete Event
+
+Users can remove an event record through a confirmation process to help prevent accidental deletion.
+
+### Search and Filter
 
 Users can search and filter event records to quickly find specific events.
 
-### 💾 Local Storage
+### Local Storage
 
-Event data is stored using browser localStorage so that records remain available after refreshing the page.
+Event data is stored using browser localStorage. This allows event records to remain available after refreshing the page without requiring a separate database.
 
-### 🔔 Notifications
+### Notifications
 
-The system provides notifications for important actions and system updates.
+The system provides notifications to inform users about important actions, such as successfully adding, updating, or deleting an event.
 
-### 🌙 Light and Night Mode
+### Light and Night Mode
 
 Users can switch between light mode and night mode for a more comfortable viewing experience.
 
-### 📱 Responsive Design
+### Responsive Design
 
-The interface is responsive and adapts to:
+The interface is responsive and adapts to different screen sizes, including:
 
-- Desktop
-- Laptop
-- Tablet
-- Mobile devices
+* Desktop
+* Laptop
+* Tablet
+* Mobile devices
 
-### ☰ Responsive Navigation
+### Responsive Navigation
 
-The system includes a responsive navigation menu with a hamburger menu for smaller screens.
-
----
-
-## 🛠️ Technologies Used
-
-- Vue.js
-- Vite
-- JavaScript
-- HTML5
-- CSS3
-- Tailwind CSS
-- Browser localStorage
-- Git
-- GitHub
-- GitHub Actions
-- GitHub Pages
+The system includes a responsive navigation menu with a hamburger menu for smaller screen sizes.
 
 ---
 
-## 💻 Installation and Setup
+## System Architecture
 
-### 1. Clone the repository
+EVENTORA uses a **component-based Vue.js architecture**. The application is divided into reusable Vue components and composables that handle different responsibilities.
+
+The main parts of the system include:
+
+* **Presentation Layer** — Vue components responsible for displaying the interface and receiving user input.
+* **Application Logic** — Vue composables and JavaScript functions responsible for event management, searching, filtering, notifications, and state management.
+* **Data Storage** — Browser localStorage used to save and retrieve event records.
+
+This structure separates the user interface from application logic and data storage, making the system easier to maintain and extend.
+
+---
+
+## Technologies Used
+
+* **Vue.js** — Frontend framework
+* **Vite** — Development and build tool
+* **JavaScript** — Application logic
+* **HTML5** — Page structure
+* **CSS3** — Styling
+* **Tailwind CSS** — Utility-based styling
+* **Browser localStorage** — Client-side data storage
+* **Git** — Version control
+* **GitHub** — Source code repository
+* **GitHub Actions** — Continuous integration
+* **GitHub Pages** — Application deployment
+
+---
+
+## Installation and Setup
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/benyqt022006/pineda-module7-vue-system.git
