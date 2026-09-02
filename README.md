@@ -234,6 +234,16 @@ The baseline system contained:
 
 Module 9 testing adds verification for the new authentication functionality while preserving the existing event management tests.
 
+## Updated Manual Test Cases – Module 9
+
+| Test Case ID | Test Case | Expected Result | Actual Result | Status |
+|---|---|---|---|---|
+| TC-M9-01 | Register with valid name, email, and matching password | Account is created successfully | Account created successfully | PASS |
+| TC-M9-02 | Register with an email that already exists | System displays an existing-account error | Existing-account error displayed | PASS |
+| TC-M9-03 | Login using valid registered credentials | User is redirected to the Eventora dashboard | Eventora dashboard displayed | PASS |
+| TC-M9-04 | Login using incorrect password | System rejects the login attempt | Login attempt rejected | PASS |
+| TC-M9-05 | Click Logout while authenticated | User is logged out and returned to the authentication screen | User returned to authentication screen | PASS |
+
 ### Verification Commands
 
 ```bash
